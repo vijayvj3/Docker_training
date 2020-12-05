@@ -22,10 +22,10 @@ pipeline {
         steps{
           script {
                     last_started = env.STAGE_NAME
-          withCredentials([usernamePassword(credentialsId: 'dockerhub_priya', passwordVariable: 'pass', usernameVariable: 'userId')]) {
+          withCredentials([usernamePassword(credentialsId: 'dockerID', passwordVariable: 'pass', usernameVariable: 'userId')]) {
             sh 'docker login -u ${userId} -p ${pass}'
-            sh "docker commit nginx priya4/docker:latest"
-            sh "docker push priya4/docker:latest"   
+            sh "docker commit nginx vijayvj3/docker:latest"
+            sh "docker push vijayvj3/docker:latest"   
           }
         } 
         }
