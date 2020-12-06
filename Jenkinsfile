@@ -5,7 +5,7 @@ pipeline {
         steps {
           script {
             last_started = env.STAGE_NAME
-          sh "docker build -t docker ."   
+          sh "docker build -t docker:v1 ."   
           }  
         }
       }
