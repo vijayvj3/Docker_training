@@ -31,13 +31,13 @@ pipeline {
         }
       }     
     }
- /* post {
+  post {
     success {
     echo 'Successfully completed '    
     }
     failure {
     echo "Build failed at $last_started"
     }  
-  }*/
+  }
 }
 
