@@ -37,7 +37,7 @@ pipeline {
     }
     failure {
     echo "Build failed at $last_started"
-    }  */
-  }
+    }  
+  }*/
 }
 
