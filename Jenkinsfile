@@ -9,7 +9,7 @@ pipeline {
           }  
         }
       }
-      stage("Execute Docker image") {
+    /*  stage("Execute Docker image") {
         steps {
           script {
             last_started = env.STAGE_NAME
@@ -38,5 +38,5 @@ pipeline {
     echo "Build failed at $last_started"
     }  
   }
-}
+}*/
 
