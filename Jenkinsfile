@@ -13,7 +13,7 @@ pipeline {
      stage("Execute Docker image") {
         steps {
           script {
-           // last_started = env.STAGE_NAME
+            last_started = env.STAGE_NAME
          // sh "docker run --name nginx -itd -p 8082:80 docker:latest"   
           }  
         }  
