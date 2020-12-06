@@ -9,7 +9,7 @@ pipeline {
           }  
         }
       }
-    }
+    
     /*  stage("Execute Docker image") {
         steps {
           script {
@@ -37,7 +37,7 @@ pipeline {
     }
     failure {
     echo "Build failed at $last_started"
-    }  
+    }  */
   }
-}*/
+}
 
