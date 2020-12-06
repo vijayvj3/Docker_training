@@ -9,6 +9,7 @@ pipeline {
           }  
         }
       }
+    }
     /*  stage("Execute Docker image") {
         steps {
           script {
